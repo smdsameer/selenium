@@ -1,0 +1,37 @@
+public class locators(){
+public static void main(String,args[]){
+System.setProperties("webdriver.chrome.driver","Select ur path location which you have chorme driver,IE,FireFox");
+WebDriver driver= new Chrome Driver();// import from selenium 
+driver.get("https://www.facebook.com");
+
+They are 8 Locators in Selenium
+
+Process 1:-
+
+driver.findElement(By.xpath("//input[//*[@id="email"]").sendskeys("facebook");
+
+Process 2:-
+
+driver.findElement(By.id("email")).sendkeys("facebook"); //by id
+
+Process 3:-
+
+driver.findelement(By.name("email")).sendkeys("facebook");
+
+process 4:-
+
+driver.findelement(By.linktext("email")).click();
+
+process 5:-
+
+driver.findelement(By.CssSelector("#email").sendkeys("facebook");
+
+process 6:-
+
+driver.findElement(By.partiallinktext("emil.lk").sendkeys("facebook");
+
+process 7:-
+
+driver.findElement(By.className("email")).sendkeys("facebook");
+
+}
