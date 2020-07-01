@@ -1,0 +1,17 @@
+public class dropdown(){
+public static void main(String[],arg){
+System.setProperties("webdriver. chrome.driver","select the driver path in which drive u have saved");
+WebDriver driver=new ChromeDriver();
+driver.get("https://www.facebook.com");
+driver.manage().Window().maxizimise();
+driver.manage().deleteAllthecookies();
+driver.manage().timeoutS().pageloadtimeout(20,TimeUnit.SECONDS);
+driver.manage().timeouts().implicityWait(20,TimeUnit.SECONDS);
+
+Select d=new Select(driver.findElement(By.Xpath("//select[@id='day']");
+d.SelectByvisibleText("5");
+Select m=new Select(driver.findElement(By.xath("//select[@id='month']");
+m.SelectByvisibleText("Jan");
+Select y=new Select(driver.findElement(By.xath("//select[@id='year']");
+y.SelectByvisibleText("1988");
+}}
